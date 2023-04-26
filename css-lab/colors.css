@@ -1,0 +1,11 @@
+li {
+    font-weight: bold;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+#first, #second, #third {
+    color: red;
+}

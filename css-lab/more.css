@@ -1,0 +1,48 @@
+#padding-example {
+  background-color: red;
+  padding: 2rem;
+}
+
+#margin-example {
+  background-color: green;
+  margin: 2rem;
+}
+
+#width-height-example {
+  background-color: blue;
+  width: 50%;
+  height: 100px;
+}
+
+#relative-example {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: solid;
+}
+
+#absolute-example {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: solid;
+}
+
+#flex-example {
+    display: flex;
+    background-color: yellow;
+}
+
+#flex-example > div {
+    border: solid;
+    padding: 2rem;
+}
+
+#z-index-example {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  top: 0;
+}
