@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <form action="http://localhost:12345">
+      <input type="submit" />
+    </form>
+    <div></div>
+
+    <script>
+      document.forms[0].onsubmit = function (event) {
+        event.preventDefault();
+
+        fetch(document.forms[0].action)
+          .then((resp) => resp.json())
+          .then((data) => {
+            console.log(data);
+            document.getElementsByTagName("div")[0].innerText =
+              "The server sent: " + data.res;
+          });
+      };
+    </script>
+  </body>
+</html>

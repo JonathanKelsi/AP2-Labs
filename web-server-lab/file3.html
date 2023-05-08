@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form action="http://localhost:12345">
+      <input type="submit" />
+    </form>
+
+    <script>
+      document.forms[0].onsubmit = function (event) {
+        event.preventDefault();
+      };
+    </script>
+  </body>
+</html>
