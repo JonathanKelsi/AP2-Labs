@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <main role="main" class="pb-3">
+                <%for (var i = 0; i < articles.length; i++) {%>
+                <article>
+                    <span><%=articles[i].id%></span>
+                    <span><%=articles[i].title%></span>
+                    <span><%=articles[i].content%></span>
+                </article>
+                <%}%>
+            </main>
+        </div>
+    </body>
+</html>
